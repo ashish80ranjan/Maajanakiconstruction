@@ -46,7 +46,7 @@ def vedioGallary(request):
 
 
 def feedback(request):
-    con ={"intro":"Your Feed Back is important For Us!",
+    con ={"intro":"FeedBack Form",
           }
     if request.method=='POST':
           name= request.POST['name']

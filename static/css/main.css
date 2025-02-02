@@ -32,10 +32,11 @@ footer{
     transform: scale(1.5);
    }
    .typer{
-    display: inline-block;
+   display: inline-block;
   }
   .typed-out{
     overflow: hidden;
+    position: relative;
     border-right: .15em solid;
     white-space: nowrap;
     animation: typing 1.4s steps(20, end) forwards, blinking 1s infinite;
@@ -50,6 +51,7 @@ footer{
     from { border-color: transparent }
     to { border-color: white; }
   }
+  
   .nav-item{
     transition: transform .5s ease;
   }
