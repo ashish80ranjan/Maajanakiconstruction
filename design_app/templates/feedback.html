@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+ {% block title %}
+<title>FeedBack</title>
+
+{% endblock title %} 
+{% block style %}
+<link rel="stylesheet" href="{% static "css/feedback.css" %}">
+
+{% endblock style %}
+{% block contant %}
+<div class="container my-3">
+  <div class="typer">
+    <h1 class="typed-out">{{intro}}</h1>
+  </div>
+  <form method="post"  action='feedback'>
+    {% csrf_token %}
+    <div
+      class="container my-3 border border-secondary rounded-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+    >
+      <div class="container my-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control border-success"
+            id="exampleFormControlInput1"
+            placeholder="Enter Your Name"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label"
+            >Mobile Number</label
+          >
+          <input
+            type="phone"
+            name="phone"
+            class="form-control border-success"
+            id="exampleFormControlInput2"
+            placeholder="Enter Your Mobile Number"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput3" class="form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control border-success"
+            id="exampleFormControlInput3"
+            placeholder="Email Address"
+          />
+        </div>
+
+
+       <div class=" my-3 d-flex justify-content-between">
+          <div class="flxitm">
+          <h6 id="test">Interior Design</h6>
+          <div class="rating-wrapper mb-3">
+            <input type="radio" name="rating" value="1" id="star-1"><label for="star-1"></label>
+            <input type="radio" name="rating" value="2"  id="star-2"><label for="star-2"></label>
+            <input type="radio" name="rating" value="3"  id="star-3"><label for="star-3"></label>
+            <input type="radio" name="rating"  value="4" id="star-4"><label for="star-4"></label>
+            <input type="radio" name="rating"  value="5" id="star-5"><label for="star-5"></label>
+          </div>
+        </div>
+
+        <div class="flxitm">
+          <h6 > Exterior Design</h6>
+          <div class="rating-wrapper mb-3">
+            <input type="radio" name="rating1" value="1" id="star-11"><label for="star-11"></label>
+            <input type="radio" name="rating1" value="2"id="star-12"><label for="star-12"></label>
+            <input type="radio" name="rating1" value="3"id="star-13"><label for="star-13"></label>
+            <input type="radio" name="rating1" value="4"id="star-14"><label for="star-14"></label>
+            <input type="radio" name="rating1" value="5"id="star-15"><label for="star-15"></label>
+          </div>
+        </div>
+       </div>
+
+       <div class=" my-3 d-flex justify-content-center">
+        <div class="flxitm">
+        <h6 >OverAll Rating</h6>
+        <div class="rating-wrapper mb-3">
+          <input type="radio" name="ratingz" value="1" id="star-1z"><label for="star-1z"></label>
+          <input type="radio" name="ratingz" value="2" id="star-2z"><label for="star-2z"></label>
+          <input type="radio" name="ratingz" value="3"  id="star-3z"><label for="star-3z"></label>
+          <input type="radio" name="ratingz" value="4" id="star-4z"><label for="star-4z"></label>
+          <input type="radio" name="ratingz" value="5" id="star-5z"><label for="star-5z"></label>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="mb-3 my-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >FeedBack</label
+          >
+          <textarea
+            name="msz"
+            class="form-control border-success"
+            id="exampleFormControlTextarea1"
+            rows="6"
+          ></textarea>
+        </div>
+        <div class="mb-3 my-3">
+          <h5>Will you Suggest us to other in Future?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="Yes" name="flexRadioDefault" id="flexRadioDefault1" checked>
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="No" name="flexRadioDefault" id="flexRadioDefault2" >
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <input type="hidden" id="testi" name="Interior" value="3487">
+        <input type="hidden" id="test1" name="Exterior" value="3487">
+        <input type="hidden" id="testz" name="OverAll" value="3487">
+        <input type="hidden" id="testflexRadioDefault" name="Suggest" value="3487">
+        <div class="my-3">
+          <button type="submit" class="btn btn-primary btnn" onclick="OvFun();recFun();InFun();ExFun();fun()" >Submit</button>
+        </div>
+        
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock contant %}

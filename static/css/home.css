@@ -1,0 +1,33 @@
+.home::before{
+    content: "";
+    background: url('../images/maaj.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+    width: 100%;
+    align-items: center;
+   
+}
+.home h1{
+ font-size: 4rem;
+}
+.home h2{
+    font-size: 2rem;
+}
+.intr{
+    font-weight: bold;
+    font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  }

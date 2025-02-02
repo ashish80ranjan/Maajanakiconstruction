@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Contact-us</title>
+{% endblock title %}
+{% block contant %}
+<div class="container my-3">
+    <div class="typer">
+        <h1 class="typed-out">{{intro}}</h1>
+    </div>
+    <form  method="post" action="contact">
+      {% csrf_token %}
+    <div class="container my-3 border border-secondary rounded-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <div class="container my-3" >
+        <div class="mb-3">
+            <label for="exampleFormControlInput1"  class="form-label">Name</label>
+            <input type="text" name="name" class="form-control border-success" id="exampleFormControlInput1" placeholder="Enter Your Name">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput2"  class="form-label">Mobile Number</label>
+            <input type="phone" name="phone" class="form-control border-success" id="exampleFormControlInput2" placeholder="Enter Your Name">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control border-success" id="exampleFormControlInput3" placeholder="Email Address">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea name="msz" class="form-control border-success" id="exampleFormControlTextarea1" rows="6"></textarea>
+          </div>
+          <div class="my-3 ">
+          <button type="submit" class="btn btn-primary btnn ">Submit</button>
+        </div>
+    </div>
+</div>
+</form>
+</div>
+{% endblock contant %}

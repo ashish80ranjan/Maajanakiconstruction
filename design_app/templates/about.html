@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<title>About-us</title>
+{% endblock title %}
+{% block style %}
+<link rel="stylesheet" href="{% static "css/aboutus.css" %}">
+<style>
+    
+  
+#sec1{
+    background-image: url('{% static "images/lab.jpg" %}') ; 
+    height: 30vh;
+    width: 100%;
+    opacity: 0.8;
+}
+</style>
+{% endblock style %}
+{% block contant %}
+<div class="container my-3">
+    <div class="typer">
+        <h1 class="typed-out">{{intro}}</h1>
+    </div>
+</div>
+<div class="container block" id="">
+    <div class="row row-cols-md-2 d-flex justify-content-between align-items-center">
+        
+        <div class="d-flex flex-column bd-highlight mb-3 ">
+            <h3>Hello everyone!</h3>
+            <h3>Meet DIPEN PRADHAN Owner of MAA JANAKI CONSTRUCTION</h3>
+            <h5 class="my-4">
+                With over 18 years of experience in the field of architecture, we brings a deep understanding of design, functionality, and innovation to every project. Having worked on a diverse range of residential, commercial, and public sector designs, we combine a strong technical foundation with a creative approach to ensure each project is both aesthetically pleasing and practical Whether working with clients, engineers, or contractors, we place a strong emphasis on clear communication and teamwork to bring each vision to life.
+
+            </h5>
+            
+        </div>
+
+        <div class="text-center">
+            
+                <img style="width: 27rem;height:35rem;float:right;" src="{% static "images/ph.jpg" %}" class="rounded " alt="...">
+             
+        </div>
+
+    </div>
+</div>
+
+<div class="container  my-4">
+    <h1 class="text-center my-4"> We Build Home You deserve With Love</h1>
+    <div id="home my-4">
+        <div class=" row row-cols-md-3 my-4 d-flex justify-content-between">
+
+
+            <div class="card shadow p-3 mb-5 bg-body rounded btnn my-4 block" style="width: 18rem;">
+                <img src="{% static "images/hjl.jpg" %}" class="card-img-top my-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Interior Design</h5>
+                  <p class="card-text">Interior design include new morden design of model as per Coustomer need/satisfation</p>
+                  
+                </div>
+              </div>
+
+
+              <div class="card shadow p-3 mb-5 bg-body rounded btnn my-4 block" style="width: 18rem;">
+                <img src="{% static "images/ext.jpg" %}" class="card-img-top my-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Exterior Design</h5>
+                  <p class="card-text">Designing of model externally which makes our Dream Come true with joy and happiness  </p>
+                  
+                </div>
+              </div>
+
+
+              <div class="card shadow p-3 mb-5 bg-body rounded btnn my-4 block" style="width: 18rem;">
+                <img src="{% static "images/121.jpg" %}" class="card-img-top my-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Site Detailling</h5>
+                  <p class="card-text">Most basic or fundamentle requirement to Construction is correctly Evaluation of site each centimetre into perfect Map</p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  my-4">
+    <h1 class="text-center my-4">Diversity</h1>
+    <div id="home my-4">
+        <div class=" row row-cols-md-3 my-4 d-flex justify-content-between">
+
+
+            <div class="card shadow p-3 mb-5 bg-body rounded btnn my-4 block" style="width: 18rem;">
+                <img src="{% static "images/der.jpg" %}" class="card-img-top my-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Houses</h5>
+                  <p class="card-text"> we specialize in building high-quality, durable, and beautifully designed homes tailored to your vision. With 18 years of experience, our team of skilled architects, engineers, and craftsmen ensures every project is executed with precision, innovation, and excellence. </p>
+                  
+                </div>
+              </div>
+
+
+              <div class="card shadow p-3 mb-5 bg-body rounded btnn my-4 block" style="width: 18rem;">
+                <img src="{% static "images/659.jpg" %}" class="card-img-top my-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Restaurants</h5>
+                  <p class="card-text">We understand that a restaurant is more than just a building—it’s an experience. That’s why we focus on smart space planning, high-quality materials, and modern construction techniques to create stylish, durable, and customer-friendly dining spaces. Whether you need a fine-dining establishment, a trendy café, or a fast-casual eatery, we bring your vision to life with expert craftsmanship and timely execution. </p>
+                  
+                </div>
+              </div>
+
+
+              <div class="card shadow p-3 mb-5 bg-body rounded btnn my-4 block" style="width: 18rem;">
+                <img src="{% static "images/tem.png" %}" class="card-img-top my-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temple and Many More</h5>
+                  <p class="card-text">we have experience of Designing temples, small bussiness markets,and many more yet to come customer need to tell us there requirement and site location. we will give map as per requirement and date of complition, and start working on it </p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container my-4">
+    <h1 class="text-center my-4">How We Do Our Jobs</h1>
+    <div class="accordion accordion-flush shadow p-3 mb-5 bg-body rounded" id="accordionFlushExample">
+        <div class="accordion-item block">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Planning & Design
+
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body block"> 
+                <li class="fw-bold">Set a budget, select a location, and hire professionals</li>
+
+            <li class="fw-bold">Create architectural, structural, and utility plans.</li>
+
+        <li class="fw-bold">Obtain necessary permits and approvals</li>
+    </div>
+          </div>
+        </div>
+        <div class="accordion-item block">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Construction & Installation
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                 
+                <li class="fw-bold">Prepare the site, lay the foundation, and build the structure</li>
+  
+                <li class="fw-bold">nstall roofing, electrical, plumbing, and HVAC systems</li>
+    
+            <li class="fw-bold">Complete interior and exterior finishes, including flooring, painting, and fixtures.</li>
+    
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item block">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Finalization & Handover
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                 
+                <li class="fw-bold">Conduct quality inspections and safety checks.</li>
+  
+                <li class="fw-bold">Clean up the site and add landscaping.</li>
+    
+            <li class="fw-bold">Perform a final walkthrough and hand over the completed home</li>
+    
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container shadow p-3 mb-5 bg-body rounded my-4 block">
+    <h1 class="text-center my-4">We Have Skilled Team of Labor</h1>
+    <div id="home my-4">
+        <div class=" my-4 d-flex justify-content-between align-items-center btnn">
+
+            <div id="sec1">
+                <h5 class="my-4">we take pride in our highly skilled and dedicated labor force. Our team consists of experienced professionals who bring precision, craftsmanship, and attention to detail to every project. Whether it's construction, finishing, or intricate architectural detailing, our skilled workers ensure quality, efficiency, and excellence at every stage.
+
+                    With a strong commitment to innovation and workmanship, we deliver projects that not only meet but exceed client expectations. Our labor force is the backbone of our success, ensuring that every design comes to life with flawless execution and durability.
+                    
+                    Quality work, expert hands, outstanding results! </h5>
+            </div>
+            
+
+
+              
+
+
+              
+        </div>
+    </div>
+</div>
+<div class="container my-4 ">
+    <div class="flxitm text-center shadow p-3 mb-5 bg-body rounded btnn">
+        <h1 id="test">Coustomer Rating</h1>
+        <div class="mb-3 btnn">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+      </div>
+</div>
+{% endblock contant %}

@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<title>Gallary</title>
+{% endblock title %}
+{% block contant %}
+<div class="container my-3">
+    <div class="typer">
+        <h1 class="typed-out">{{intro}}</h1>
+    </div>
+</div>
+    <div class=" container my-3 " >
+        <div class="row gy-4 gx-4   row-cols-md-1 d-flex justify-content-center " >
+            {% for obj in all_vedio %}
+            <h3 class="my-2">{{obj.vedio_name}}</h3>
+            <div class="ratio ratio-16x9 my-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <video  controls>
+                    <source src='/media/{{obj.vedio}}' type="video/mp4">
+                  </video>
+              </div>
+
+            {% endfor %}
+            
+        </div>
+    </div>
+    
+
+{% endblock contant %}

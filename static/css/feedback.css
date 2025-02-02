@@ -1,0 +1,41 @@
+
+.rating-wrapper label{
+    display: inline-block;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .rating-wrapper{
+    direction: rtl;
+  }
+  .rating-wrapper input{
+    display: none;
+  }
+  .rating-wrapper label:before{
+    content: "\2605";
+    position: absolute;
+    font-size:20px;
+    color:black;
+    display: inline-block;
+    top: 0;
+    left: 0;
+  }
+  .rating-wrapper label:after{
+    content: "\2605";
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    color:gold;
+    opacity: 0;
+  }
+  .rating-wrapper label:hover:after,
+  .rating-wrapper label:hover~label:after,
+  .rating-wrapper input:checked~label:after{
+    opacity: 1;
+  }
+  
+  h6{
+    text-align: center;
+  }
